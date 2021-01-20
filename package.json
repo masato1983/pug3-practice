@@ -1,22 +1,19 @@
 {
-  "name": "ux-project",
+  "name": "pug3-practice",
   "version": "1.0.0",
-  "description": "portfolio photography",
-  "main": "app.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "private": true,
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ],
-  "dependencies": {
-    "browser-sync": "^2.26.7",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
