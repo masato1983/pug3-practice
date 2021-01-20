@@ -1,3 +1,5 @@
+- const name = 'Dorian'
+
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -11,6 +13,9 @@ html(lang="en")
       }
   body
     header(style={'background-color': 'blue', 'margin-top': '20px'})
+    p hello #{name}
+    p hello #{name + 1}
+    p hello #{name.toUpperCase()}
     script(src="scripts.js")
     script.
       const aleart = () =>{
