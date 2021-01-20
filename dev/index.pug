@@ -16,6 +16,9 @@ html(lang="en")
     p hello #{name}
     p hello #{name + 1}
     p hello #{name.toUpperCase()}
+    p= `hello ${name}`
+    p `hello ${name}`
+    p hello ${name}
     script(src="scripts.js")
     script.
       const aleart = () =>{
