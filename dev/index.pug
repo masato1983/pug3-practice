@@ -1,4 +1,5 @@
 - const name = 'Dorian'
+- const numbers = [1, 2, 3, 4, 5]
 
 <!DOCTYPE html>
 html(lang="en")
@@ -19,6 +20,12 @@ html(lang="en")
     p= `hello ${name}`
     p `hello ${name}`
     p hello ${name}
+    ul
+      li= numbers[0]
+      li= numbers[1]
+      li= numbers[2]
+      li= numbers[3]
+      li= numbers[4]
     script(src="scripts.js")
     script.
       const aleart = () =>{
