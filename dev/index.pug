@@ -1,5 +1,11 @@
 - const name = 'Dorian'
 - const numbers = [1, 2, 3, 4, 5]
+-
+  const person = {
+    name: 'Dorian',
+    surname: 'Designs',
+    age: 30
+  }
 
 <!DOCTYPE html>
 html(lang="en")
@@ -26,6 +32,11 @@ html(lang="en")
       li= numbers[2]
       li= numbers[3]
       li= numbers[4]
+    ul
+      li= person.name
+      li= person.surname
+      li= person.age
+    p= `${person.name} ${person.surname} is ${person.age} old`
     script(src="scripts.js")
     script.
       const aleart = () =>{
