@@ -5,6 +5,9 @@
   "main": "gulpfile.babel.js",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
