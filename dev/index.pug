@@ -7,3 +7,24 @@ html(lang="en")
     title Document
   body
     h1 title
+
+    - let username = true
+
+    if username
+      p hello user
+    else if username == null
+      p username no exist
+    else
+      p sorry error
+
+    if !username
+      p sorry error
+    else
+      p hello user
+
+    unless username
+      p sorry error
+    else
+      p hello user
+
+    p(class= username ? 'registered' : 'unregistered')
