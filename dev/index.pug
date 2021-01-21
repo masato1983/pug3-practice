@@ -11,8 +11,8 @@ html(lang="en")
     each name in names
       p= name
 
-    if username
-      p hello user
+    each name in names
+      p= `${name.charAt(0).toUpperCase()}`
     else if username == null
       p username no exist
     else
