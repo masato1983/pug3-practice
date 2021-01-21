@@ -8,7 +8,8 @@ html(lang="en")
   body
     - const names = ['dorian', 'Laura', 'maruta', 'carLos']
 
-    - let username = true
+    each name in names
+      p= name
 
     if username
       p hello user
