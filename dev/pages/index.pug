@@ -1,4 +1,5 @@
 extends ../templates/template.pug
+include ../mixins/link.pug
 
 block append header
   h2 subtitle
@@ -6,5 +7,6 @@ block append header
 block main
   each name in names
     p= name
+  +link('/public/about.html', 'about')
 
 block footer
