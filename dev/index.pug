@@ -8,6 +8,12 @@ html(lang="en")
   body
     - const names = ['dorian', 'Laura', 'maruta', 'carLos']
     - const lists = []
+    -
+      var person = {
+        name: 'Dorian',
+        email: 'dorian@email.com'
+      }
+    - let n = 0
 
     each name in names
       p= name
@@ -25,3 +31,9 @@ html(lang="en")
       p= list
     else
       p No lists
+
+    each value in person
+      p= value
+
+    each value, key in person
+      p= `${key}: ${value}`
