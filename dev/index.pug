@@ -7,6 +7,7 @@ html(lang="en")
     title Document
   body
     - const names = ['dorian', 'Laura', 'maruta', 'carLos']
+    - const lists = []
 
     each name in names
       p= name
@@ -16,3 +17,11 @@ html(lang="en")
 
     each name in names
       p= `${name.substring(1)}`
+
+    each list in lists.length ? lists : ['No lists']
+      p= list
+
+    each list in lists
+      p= list
+    else
+      p No lists
