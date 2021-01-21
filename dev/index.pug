@@ -6,3 +6,25 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
   body
+    - const names = ['dorian', 'Laura', 'maruta', 'carLos']
+
+    - let username = true
+
+    if username
+      p hello user
+    else if username == null
+      p username no exist
+    else
+      p sorry error
+
+    if !username
+      p sorry error
+    else
+      p hello user
+
+    unless username
+      p sorry error
+    else
+      p hello user
+
+    p(class= username ? 'registered' : 'unregistered')
